@@ -9,6 +9,7 @@ import UIKit
 import ReactorKit
 import RxSwift
 import RxCocoa
+<<<<<<< HEAD
 import SafariServices
 
 final class SearchViewController: UIViewController, View {
@@ -62,4 +63,13 @@ final class SearchViewController: UIViewController, View {
       .disposed(by: disposeBag)
 
   }
+=======
+
+final class SearchViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+    }
+>>>>>>> 90f751b... :tada: 라이브러리 import 및 Screen 파일
 }

@@ -14,6 +14,7 @@ class SearchView: UIView {
 
   }
 
+<<<<<<< HEAD
   let repoSearchBar: UISearchBar = {
     let searchBar = UISearchBar()
     searchBar.returnKeyType = .done
@@ -26,6 +27,8 @@ class SearchView: UIView {
     return tableView
   }()
 
+=======
+>>>>>>> 90f751b... :tada: 라이브러리 import 및 Screen 파일
   override init(frame: CGRect) {
     super.init(frame: frame)
     render()
@@ -37,6 +40,7 @@ class SearchView: UIView {
 
   private func render() {
 
+<<<<<<< HEAD
     self.addSubview(repoSearchBar)
     self.addSubview(repoTableView)
 
@@ -52,6 +56,8 @@ class SearchView: UIView {
       make.bottom.equalTo(safeAreaLayoutGuide)
     }
 
+=======
+>>>>>>> 90f751b... :tada: 라이브러리 import 및 Screen 파일
   }
 }
 
