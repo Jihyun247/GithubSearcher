@@ -64,13 +64,17 @@ class RepoTableViewCell: UITableViewCell {
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
 
+<<<<<<< HEAD
     render()
     configUI()
+=======
+>>>>>>> f4dd9ba... :lipstick: RepoTableView Cell UI
   }
 
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
+<<<<<<< HEAD
 
   private func render() {
     self.contentView.addSubViews([repoImageView, repoNameLabel, descriptionLabel, starIconImageView, starCountLabel, issueIconImageView, issueCountLabel])
@@ -113,5 +117,7 @@ class RepoTableViewCell: UITableViewCell {
   private func configUI() {
     repoImageView.makeRounded(cornerRadius: 45)
   }
+=======
+>>>>>>> f4dd9ba... :lipstick: RepoTableView Cell UI
 }
 

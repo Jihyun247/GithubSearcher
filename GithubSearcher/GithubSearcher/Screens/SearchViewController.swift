@@ -67,9 +67,11 @@ final class SearchViewController: UIViewController, View {
 
 final class SearchViewController: UIViewController {
 
+    var mainView = SearchView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view = mainView
     }
 >>>>>>> 90f751b... :tada: 라이브러리 import 및 Screen 파일
 }
