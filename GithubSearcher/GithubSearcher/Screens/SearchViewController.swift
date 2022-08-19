@@ -12,8 +12,10 @@ import RxCocoa
 
 final class SearchViewController: UIViewController {
 
+    var mainView = SearchView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view = mainView
     }
 }
