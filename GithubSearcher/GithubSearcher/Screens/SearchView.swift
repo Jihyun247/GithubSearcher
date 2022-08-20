@@ -14,10 +14,6 @@ class SearchView: UIView {
 
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f4dd9ba... :lipstick: RepoTableView Cell UI
   let repoSearchBar: UISearchBar = {
     let searchBar = UISearchBar()
     searchBar.returnKeyType = .done
@@ -30,11 +26,6 @@ class SearchView: UIView {
     return tableView
   }()
 
-<<<<<<< HEAD
-=======
->>>>>>> 90f751b... :tada: 라이브러리 import 및 Screen 파일
-=======
->>>>>>> f4dd9ba... :lipstick: RepoTableView Cell UI
   override init(frame: CGRect) {
     super.init(frame: frame)
     render()
@@ -46,10 +37,6 @@ class SearchView: UIView {
 
   private func render() {
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f4dd9ba... :lipstick: RepoTableView Cell UI
     self.addSubview(repoSearchBar)
     self.addSubview(repoTableView)
 
@@ -64,12 +51,6 @@ class SearchView: UIView {
       make.leading.trailing.equalToSuperview()
       make.bottom.equalTo(safeAreaLayoutGuide)
     }
-
-<<<<<<< HEAD
-=======
->>>>>>> 90f751b... :tada: 라이브러리 import 및 Screen 파일
-=======
->>>>>>> f4dd9ba... :lipstick: RepoTableView Cell UI
   }
 }
 
