@@ -63,12 +63,55 @@ class RepoTableViewCell: UITableViewCell {
 
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
+
+    render()
+    configUI()
   }
 
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
 
+  private func render() {
+    self.contentView.addSubViews([repoImageView, repoNameLabel, descriptionLabel, starIconImageView, starCountLabel, issueIconImageView, issueCountLabel])
 
+    repoImageView.snp.makeConstraints { make in
+      make.top.left.bottom.equalToSuperview().inset(16)
+      make.size.equalTo(90)
+    }
+
+    repoNameLabel.snp.makeConstraints { make in
+      make.top.equalToSuperview().inset(24)
+      make.leading.equalTo(repoImageView.snp.trailing).offset(8)
+    }
+    descriptionLabel.snp.makeConstraints { make in
+      make.top.equalTo(repoNameLabel.snp.bottom).offset(4)
+      make.leading.equalTo(repoNameLabel.snp.leading)
+    }
+
+    starIconImageView.snp.makeConstraints { make in
+      make.size.equalTo(15)
+      make.leading.equalTo(repoNameLabel.snp.leading)
+      make.top.equalTo(descriptionLabel.snp.bottom).offset(16)
+    }
+    starCountLabel.snp.makeConstraints { make in
+      make.leading.equalTo(starIconImageView.snp.trailing).offset(2)
+      make.centerY.equalTo(starIconImageView.snp.centerY)
+    }
+
+    issueIconImageView.snp.makeConstraints { make in
+      make.size.equalTo(15)
+      make.leading.equalTo(starCountLabel.snp.trailing).offset(8)
+      make.centerY.equalTo(starIconImageView.snp.centerY)
+    }
+    issueCountLabel.snp.makeConstraints { make in
+      make.leading.equalTo(issueIconImageView.snp.trailing).offset(2)
+      make.centerY.equalTo(starIconImageView.snp.centerY)
+    }
+  }
+
+  private func configUI() {
+    repoImageView.makeRounded(cornerRadius: 45)
+  }
 }
 
