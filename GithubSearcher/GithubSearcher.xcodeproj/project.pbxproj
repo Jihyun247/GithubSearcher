@@ -22,6 +22,7 @@
 		B8D59ACF28AE37CD000A360D /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D59ACE28AE37CD000A360D /* RepoTableViewCell.swift */; };
 		B8D59AD228AF5595000A360D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D59AD128AF5595000A360D /* APIService.swift */; };
 		B8D59AD428AF5B79000A360D /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D59AD328AF5B79000A360D /* SearchResult.swift */; };
+		B8D59AD628B20780000A360D /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D59AD528B20780000A360D /* UIView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		B8D59ACE28AE37CD000A360D /* RepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
 		B8D59AD128AF5595000A360D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		B8D59AD328AF5B79000A360D /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		B8D59AD528B20780000A360D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				B8D59AAC28AE0801000A360D /* Main.storyboard */,
 				B8D59AAF28AE0803000A360D /* Assets.xcassets */,
 				B8D59AB128AE0803000A360D /* LaunchScreen.storyboard */,
+				B8D59AD528B20780000A360D /* UIView+.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				B8D59AC228AE09CB000A360D /* SearchViewReactor.swift in Sources */,
 				B8D59ABE28AE09B5000A360D /* SearchViewController.swift in Sources */,
 				B8D59AA728AE0801000A360D /* AppDelegate.swift in Sources */,
+				B8D59AD628B20780000A360D /* UIView+.swift in Sources */,
 				B8D59AA928AE0801000A360D /* SceneDelegate.swift in Sources */,
 				B8D59ACF28AE37CD000A360D /* RepoTableViewCell.swift in Sources */,
 			);

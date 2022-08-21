@@ -37,7 +37,7 @@ final class SearchViewReactor: Reactor {
     var query: String?
     // 검색 결과 데이터
     var repos: [String] = []
-    // 이거 뭐지
+    // 다음 페이지 숫자
     var nextPage: Int?
     // 다음 페이지 로딩중인지
     var isLoadingNextPage: Bool = false
@@ -61,6 +61,7 @@ final class SearchViewReactor: Reactor {
         Observable.just(Mutation.setQuery(query)),
 
         // 2) API를 호출하고 (호출 메서드 : search) setRepos에 설정
+        // search 메서드가 api 호출 메서드
         self.search(query: query, page: 1)
         // cancel previous request when the new `.updateQuery` action is fired
           .take(until: self.action.filter(Action.isUpdateQueryAction))
@@ -119,7 +120,7 @@ final class SearchViewReactor: Reactor {
   }
 
 
-  
+
   private func url(for query: String?, page: Int) -> URL? {
     guard let query = query, !query.isEmpty else { return nil }
     return URL(string: "https://api.github.com/search/repositories?q=\(query)&page=\(page)")
